@@ -37,6 +37,8 @@ while True:
     userGuess = input("\n\nWhat letter would you like to guess?\n\n").lower()
     if userGuess.isalpha() == False:
       print("\nInvalid guess, try again")
+    elif len(userGuess) > 1:
+      print("\nGuess only one letter at a time, try again")
     else:
       valid = True
 
